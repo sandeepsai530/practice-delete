@@ -1,8 +1,16 @@
 - name: 
   hosts: local
   connection: local
-  vars_files:
-  - course.yaml
+  vars_prompt:
+  - name: course
+    prompt: please enter course name
+    private: false
+  - name: duration
+    prompt: please enter duration
+    private: false
+  - name: trainer
+    prompt: please enter trainer name
+    
   tasks:
   - name: print the course details
     ansible.builtin.debug:
