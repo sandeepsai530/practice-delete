@@ -5,7 +5,7 @@
     GREET: "PLAY"
   vars_files:
   - course.yaml
-  vars_promt:
+  vars_prompt:
   - name: GREET
     prompt: Enter the value
     private: false
