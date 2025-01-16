@@ -1,8 +1,8 @@
 - name: 
   hosts: local
   connection: local
-  #vars:
-  #  GREET: "PLAY"
+  vars:
+    GREET: "PLAY"
   vars_files:
   - course.yaml
   vars_prompt:
@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: print the course details
-    vars:
-      GREET: "TASK"
+  #  vars:
+  #    GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{GREET}}"
 
