@@ -1,0 +1,7 @@
+- name: 
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the course details
+    ansible.builtin.debug:
+      msg: "course is Devops with AWS for 120hrs, trained by Sai Sandeep"
